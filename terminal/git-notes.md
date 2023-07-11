@@ -18,3 +18,7 @@ Use the command `git commit -m "comment"`
 ## To see a log of your commits
 
 Use the command `git log --oneline`
+
+## To push repo to GitHub
+
+After you have committed your code, use command `git push`
