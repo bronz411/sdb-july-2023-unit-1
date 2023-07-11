@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav example</title>
+    <style>
+        body {
+            background: lightblue;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 15px 15px 15px 15px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 15px;
+        }
+/* can do padding-left padding-right, or use the above for top right bottom and left measurements. if all the same just use one ex: 15px */
+/* margins tend to add space between items */
+        .btn-primary {
+            background: green;
+            color: white;
+        }
+        .btn-active {
+            background: blue;
+            color: white;
+        }
+        .btn:hover {
+            background: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+        <a href="#" class="btn btn-active">Home</a>
+        <a href="#" class="btn btn-primary">About</a>
+   </nav>
+</body>
+</html>

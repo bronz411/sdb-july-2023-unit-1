@@ -1,0 +1,40 @@
+body {
+    background-color: lightcoral;
+}
+
+/* 
+-name the element you are targeting
+-name it by the class but must start with a period example: .main {}
+-name it by the ID with a # example: #para2 {}
+-name it with selectors ex: ol > li
+
+-classes are used to group items that should be styled similarly.
+*/
+
+.paragraph {
+    color: purple;
+    font-size: 24px;
+}
+
+#para1 {
+    color: aqua;
+}
+
+div img {
+    border-radius: 50%;
+    border: 5px solid purple;
+}
+
+/* psuedo-class selectors
+examples but not limited to include
+- Hover
+-visited
+-clicked
+-checked
+-active
+ */
+
+div>img:hover {
+    border: 10px solid green;
+    cursor: pointer;
+}
