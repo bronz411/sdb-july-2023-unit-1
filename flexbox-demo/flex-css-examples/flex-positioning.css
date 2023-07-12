@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    outline: 5px solid brown;
+    justify-content: flex-end;
+}
+
+/* default is flex-start
+center will center items in the div/container
+flex-end puts items on the end or right side of the screen
+space-around puts equidistant spacing between the items
+space-evenly puts same distance between items and edges
+space-between reduces padding on left and right to 0 but spaces items inside the container evenly */

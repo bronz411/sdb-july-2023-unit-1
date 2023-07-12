@@ -1,0 +1,15 @@
+table {
+    background: lightskyblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-style: italic;
+}
+
+table,
+th,
+td {
+    border: 1px black solid;
+}
