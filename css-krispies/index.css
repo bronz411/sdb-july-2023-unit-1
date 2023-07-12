@@ -1,0 +1,108 @@
+:root {
+    --primary: #074f89;
+    --secondary: #4f709c;
+    --hover: rgb(239, 239, 132);
+}
+
+/* rem for font size is based on default size 16px and is a multiplication of it
+em is based off of the nearest parent for size and is still a multiplication */
+header {
+    background: var(--primary);
+    padding: 50px;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.navContainer {
+    display: flex;
+    gap: 15px;
+    background: var(--secondary);
+    padding: 25px 0;
+    margin-bottom: 10px;
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#orderOnline {
+    margin-left: auto;
+}
+
+nav>a:hover {
+    color: var(--hover);
+}
+
+/* ingredients and Directions Section */
+
+.container {
+    display: flex;
+    gap: 10px;
+    margin: 0 15px;
+}
+
+#ingredient-section {
+    padding: 10px;
+    border: 5px solid var(--primary);
+    border-radius: 20px;
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--hover);
+    color: black;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* notes and image section */
+.container-reverse {
+    display: flex;
+    margin: 0 15px;
+}
+
+#note-section {
+    align-self: center;
+}
+
+.img-fluid {
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+}
+
+.rounded {
+    clip-path: circle();
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .rounded {
+        clip-path: none;
+    }
+
+    .img-fluid {
+        max-width: none;
+    }
+}
