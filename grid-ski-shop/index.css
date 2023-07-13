@@ -1,0 +1,65 @@
+:root {
+    --primary: lightblue;
+    --secondary: burlywood;
+}
+
+/* Grid Setup */
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#header {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    /* grid-column-end: -1; this would be the end of the page */
+}
+
+.sidebar {
+    grid-column: 1/4;
+    /* above is start on line 1 end on line 4 (shorthand of the header section) */
+}
+
+/* Header section */
+
+#header {
+    font-family: 'Antonio', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    background-image: url("https://images.unsplash.com/photo-1522836419305-eee4fc982fa5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1805&q=80");
+}
+
+/* Sidebar section */
+
+.sidebar > ul {
+    list-style-type: none;
+}
+
+.sidebar > ul > li {
+    margin: 15px 10px;
+    padding: 10px;
+    background: var(--primary);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.sidebar > ul>li:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+/* main section */
+.main-content {
+    grid-column: 4/-1;
+}
+
+/* footer section */
+.footer {
+    grid-column: 1/-1;
+    text-align: center;
+}
