@@ -1,0 +1,30 @@
+.spacer {
+    height: 15px;
+  }
+  header {
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    background: darkslategrey;
+    color: black;
+    font-weight: 10px;
+  }
+  
+  .left>img {
+    float: left;
+    height: 200px;
+  }
+  
+  .right>img {
+    float: right
+  }
+  
+  body {
+    background: grey;
+  }
+  
+  * {
+    font-weight: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
